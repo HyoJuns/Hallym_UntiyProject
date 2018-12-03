@@ -10,7 +10,10 @@
 MagicaVoxel은 복셀3D 모델만드는 프로그램. [링크](http://ephtracy.github.io/) <br>
 Blender는 복셀3D의 뼈대 만들어줄 용도로 사용. [링크](https://store.steampowered.com/app/365670/Blender/) <br>
 Unity 5 게임엔진을 이용하여 게임을 제작. [링크](https://store.unity.com/kr/download?ref=personal) <br>
-
+<br>
+#### 강좌 : [블렌더](http://dlgnlfus.tistory.com/326?category=704959) [매지카복셀](https://www.youtube.com/watch?v=VPnQNp-GU9I)
+<br>
+<br>
 
 ![Screen](./img/back_0.PNG)
 ![Screen](./img/back_1.PNG)
