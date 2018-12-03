@@ -13,7 +13,7 @@ Unity 5 게임엔진을 이용하여 게임을 제작. <br>
 
 
 ![Screen](./img/back_0.PNG)
-
+![Screen](./img/back_1.PNG)
 
 
 
