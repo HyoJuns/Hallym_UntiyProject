@@ -7,7 +7,7 @@
 ### 사용하는 언어 : C# Language
 ### 사용하는 프로그램 : MagicaVoxel, Blender, Unity 5
 
-MagicaVoxel은 복셀3D 모델만드는 프로그램. <br>
+MagicaVoxel은 복셀3D 모델만드는 프로그램.[링크] (http://ephtracy.github.io/) <br>
 Blender는 복셀3D의 뼈대 만들어줄 용도로 사용. <br>
 Unity 5 게임엔진을 이용하여 게임을 제작. <br>
 
