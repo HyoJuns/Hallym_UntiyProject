@@ -22,3 +22,6 @@ Unity 5 게임엔진을 이용하여 게임을 제작. [링크](https://store.un
 
 
 
+https://unity3d.com/kr/learn/tutorials/projects/survival-shooter/player-character?playlist=17144
+
+
