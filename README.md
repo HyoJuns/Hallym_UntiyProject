@@ -27,7 +27,7 @@ Sfxr 은 사운드 8비트를 만들어주는 프로그램 [링크](http://www.d
 ![Screen](./img/back_0.PNG)
 ![Screen](./img/back_1.PNG)
 
-
+## 유용 오브젝트 누르고 Ctrl + Shift + F 누르면 오브젝트가 해당 보는 위치로 
 
 
 
