@@ -1,4 +1,4 @@
-# Hallym_UntiyProject
+# Hallym_UntiyProject (학교수업 프로젝트)
 
 
 # 게임이름 : Simple Survive
