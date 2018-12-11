@@ -1,3 +1,5 @@
+[TOC]
+
 # Hallym_UntiyProject (학교수업 프로젝트)
 
 
@@ -27,7 +29,7 @@ Sfxr 은 사운드 8비트를 만들어주는 프로그램 [링크](http://www.d
 ![Screen](./img/back_0.PNG)
 ![Screen](./img/back_1.PNG)
 
-## 유용 오브젝트 누르고 Ctrl + Shift + F 누르면 오브젝트가 해당 보는 위치로 
+유용 오브젝트 누르고 Ctrl + Shift + F 누르면 오브젝트가 해당 보는 위치로 
 
 
 ### 1. 스토리
@@ -44,8 +46,8 @@ Sfxr 은 사운드 8비트를 만들어주는 프로그램 [링크](http://www.d
 
 ### 3. 개발목적
  + 유니티의 다양한 기술들을 배우고 싶어서 생존게임을 만들게 되었다.
- 
- 
+
+
 ### 4. 핵심코드
  +<b> Cs_TitleMenu </b> = 타이틀 화면을 총괄리 해주는 스크립트이며, 타이틀 화면, 옵션 화면을 자유롭게 오갈수 있도록 한다.<br>
  +<b> Cs_PlayerControl </b> = 플레이어의 걷기, 달리기, 점프, 카메라 회전을 할 수 있다. 즉, 직접 플레이어를 조종하는 주요 스크립트<br>
@@ -62,10 +64,9 @@ Sfxr 은 사운드 8비트를 만들어주는 프로그램 [링크](http://www.d
  +<b> Cs_EnemyHud </b> = 몬스터를 때릴 경우, 몬스터의 HP를 화면에 표시시키는 UI Script <br>
  +<b> Cs_CrosbarHUD </b> = 플레이어 조준점 만들어주는 스크립트<br>
  +<b> Cs_WeaponControl </b> = 마우스 왼쪽버튼클릭하면 총알
+
 ### 5. 
 
 
 
 https://unity3d.com/kr/learn/tutorials/projects/survival-shooter/player-character?playlist=17144
-
-
