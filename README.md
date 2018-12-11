@@ -20,7 +20,7 @@ Sfxr 은 사운드 8비트를 만들어주는 프로그램 [링크](http://www.d
 
 <br>
 <br>
-#### 강좌 : [블렌더](http://dlgnlfus.tistory.com/326?category=704959), [매지카복셀](https://www.youtube.com/watch?v=VPnQNp-GU9I)
+#### 강좌 : [블렌더](http://dlgnlfus.tistory.com/326?category=704959)<br>[매지카복셀](https://www.youtube.com/watch?v=VPnQNp-GU9I)
 <br>
 <br>
 
