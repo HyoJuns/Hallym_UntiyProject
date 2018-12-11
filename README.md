@@ -61,7 +61,7 @@ Sfxr 은 사운드 8비트를 만들어주는 프로그램 [링크](http://www.d
  +<b> Enemy </b> = 몬스터 파일을 만들어 해당 몬스터의 정보를 담은 스크립트<br>
  +<b> Cs_EnemyHud </b> = 몬스터를 때릴 경우, 몬스터의 HP를 화면에 표시시키는 UI Script <br>
  +<b> Cs_CrosbarHUD </b> = 플레이어 조준점 만들어주는 스크립트<br>
- 
+ +<b> Cs_WeaponControl </b> = 마우스 왼쪽버튼클릭하면 총알
 ### 5. 
 
 
