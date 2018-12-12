@@ -29,7 +29,7 @@ public class Cs_Loding : MonoBehaviour {
 	
 	public void Loads()
 	{
-		StartCoroutine(StartLoad("Game"));
+		StartCoroutine(StartLoad("Game_play"));
 		Cs_Difficulty.instance.Diff = Cs_TitleMenu.difficulty_number;
 		Debug.Log("Loding");
 		Destroy(nova);
@@ -45,7 +45,7 @@ public class Cs_Loding : MonoBehaviour {
 		if(dealyTime >= 5.0f)
 		{
 			Debug.Log("Delay Time End");
-			async_operation.allowSceneActivation = true;
+			async_operation.allowSceneActivation = true;	// 시간에 따라 장면이 즉시 넘어가는 것을 허용한다.
 		}
 	}
 	public IEnumerator StartLoad(string scene_name)

@@ -11,9 +11,9 @@ public class Cs_EnemyHud : MonoBehaviour {
 		[SerializeField] private Image image_Gauge;			// 몬스터 HP 나타내는 이미지
 		[SerializeField] private Text enemy_text;			// 몬스터 이름
 		public GameObject obj;								// 자신
-		public Enemy e;										// 몬스터 정보
+		public Cs_Enemyinfomation e;										// 몬스터 정보
 		
-
+		private float delay = 15.0f;
 
 
 		private void Update() {
@@ -22,7 +22,14 @@ public class Cs_EnemyHud : MonoBehaviour {
 				HUD(false);			
 			}else{
 				GaugeUpdate();
+				delay -= Time.deltaTime;
 			}
+
+			if(delay <= 0.2f){
+				e = null;
+				delay = 15.0f;
+			}
+				
 		}
 
 		/// <summary>
@@ -31,12 +38,12 @@ public class Cs_EnemyHud : MonoBehaviour {
 		private void GaugeUpdate()
 		{
 			if (image_Gauge != null)
-				if (e.hp <= 0)
+				if (e.Hp <= 0)
 					image_Gauge.fillAmount = 0;
 				else
-					image_Gauge.fillAmount = (e.hp / e.maxhp * 100);
+					image_Gauge.fillAmount = (float)e.Hp / e.Maxhp;
 
-			enemy_text.text = e.name;
+			enemy_text.text = e.name + "(<color=yellow>" + e.Hp + "</color>) \n";
 		}
 
 		/// <summary>
@@ -47,5 +54,9 @@ public class Cs_EnemyHud : MonoBehaviour {
 			obj.SetActive(on);
 		}
 
-
+		public void Player_Attack(int damge)
+		{
+			// 플레이어가 몬스터를 향해 공격
+			e.Damage(damge);
+		}
 }
