@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class Cs_ItemController : MonoBehaviour {
 
 	[SerializeField] private float range;				// 습득 가능 최대거리
@@ -23,7 +23,7 @@ public class Cs_ItemController : MonoBehaviour {
 	[SerializeField] private LayerMask layermask;		// Item 레이어마스크 
 	
 	// 필요 컴포넌트
-	[SerializeField] private Text actionText;			// 행동 취할 때 나오는 텍스트
+	[SerializeField] private TextMeshProUGUI actionText;			// 행동 취할 때 나오는 텍스트
 	[SerializeField] private Cs_Inventory myinventory;	// 내 인벤토리창
 	
 	Animator anim;								// 선물상자 애니메이션
@@ -109,7 +109,7 @@ public class Cs_ItemController : MonoBehaviour {
 	{
 		pickupActive = true;						// 먹기 활성화
 		actionText.gameObject.SetActive (true);		// 아이템을 먹은 걸 텍스트로 표시
-		actionText.text = hitinfo.transform.GetComponent<Cs_ItemPickup>().item.itemName + " 획득 " + "<color=yellow>" + "(E)" + "</color>";
+		actionText.text = hitinfo.transform.GetComponent<Cs_ItemPickup>().item.itemName + " Add " + "<color=yellow>" + "(E)" + "</color>";
 	}
 
 	private void ItemInfoDis()
@@ -122,7 +122,7 @@ public class Cs_ItemController : MonoBehaviour {
 	{
 		pickupActive = false;
 		actionText.gameObject.SetActive (true);
-		actionText.text = " 아이템창이 " + "<color=red>" + "FULL" + "</color>" + "입니다.";
+		actionText.text = " Item Slot " + "<color=red>" + "FULL" + "</color>" + ".";
 	}
 
 }

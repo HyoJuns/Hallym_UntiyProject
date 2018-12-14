@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(fileName ="NewItem", menuName = "NewItem/item")]
-// Create 창에 NewItem 목록을 생성하고 그안에 item이라는 칸을 생성한다.
+[CreateAssetMenu(fileName ="New", menuName = "New/item")]
+// Create 창에 New 목록을 생성하고 그안에 item이라는 칸을 생성한다.
 public class Item : ScriptableObject {
 	/*
 		ScriptableObject란? 독자적인 Asset 작성하기 위한 구조이다.
@@ -12,11 +12,21 @@ public class Item : ScriptableObject {
 		Inspecter 에 표시하는 Editor 오브젝트도 ScriptableObject 자식 클래스에서 생성되었다.
 	 */
 	
+	[Header("아이템 이름")]
 	public string itemName;			// 아이템 이름
+	[Header("아이템 설명")][Tooltip("HP 회복, SP 기력, ATK 공격력 \n THIRSTU 목마름 HUNGRY 배고픔 ARM 방어력")]
+	[TextArea]						// 여러줄 사용
+	public string itmeinfo;			// 아이템 설명
+	[Header("아이템 타입")]
+	[Tooltip("Equipment 장비 \nUsed 소비 \nIngredient 재료\nETC 기타 ")]
 	public ItemType itemtype;		// 아이템 타입
+	[Header("아이템 이미지")]
 	public Sprite itemImg;			// 아이템 이미지
+	[Header("아이템 생성 오브젝트")]
 	public GameObject itemPrefab;	// 아이템 프리팹
-
+	[Header("Score")]
+	public int score;				// 스코어
+	
 	public string weaponType;		// 무기 유형
 
 	public enum ItemType	// 타입

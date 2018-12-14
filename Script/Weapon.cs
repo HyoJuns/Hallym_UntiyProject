@@ -54,17 +54,13 @@ namespace WeaponList
 		[Tooltip("특정자원 캐는데 데미지")]
 		public int minedamage;						// 채광 데미지
 
-		[Header("채광속도")]
-		[Tooltip("일정시간마다 채광 데미지 주는 것")]
-		public float minerate;						// 채광속도
-
 		[Header("최대 에너지양")]
 		[Tooltip("레이저 채광의 최대 에너지양")]
 		public int max_mine_energy;					// Max Energy
 
 		[Header("현재 에너지양")]
 		[Tooltip("레이저 에너지 양")]
-		public float curr_mine_energy;				// Current Energy
+		public int curr_mine_energy;				// Current Energy
 
 
 		#endregion LaserMode
@@ -72,10 +68,39 @@ namespace WeaponList
 		[Header("기타 시스템")]
 		[Tooltip("파티클시스템, 레이저빔")]
 		public ParticleSystem muzzleFlash;		// 총구 섬광
+		public ParticleSystem laserFlash;		// 레이저 플래쉬
 		public GameObject LaserWeapon;			// 레이저 무기
-		public LineRenderer lr;					// 레이저빔
+		
 		public Animator anim;					// 애니메이터
 
+
+		// 총알 추가
+		public void Addbullet(int _count)
+		{
+			int retrunbullet = currentBulletCount + _count;		// 남은 탄환
+			// 먼저 총알 횟수가 장전 범위내 총알보다 많을 경우
+			if (retrunbullet >= reloadBulletCount )
+			{
+				retrunbullet -= reloadBulletCount;
+				currentBulletCount = reloadBulletCount;			// 탄약 충전 완료
+				if ( carryBulletCount + retrunbullet >= maxBulletCount){	// 현재 가지고 있는 총알 수가 최대 가질 수 있는 총알 수 보다 많을 때
+					carryBulletCount = maxBulletCount;
+				}else{
+					carryBulletCount += retrunbullet;
+				}
+			}else{
+				currentBulletCount += retrunbullet;			// 탄환 충전
+			}
+
+			Debug.Log("총알 추가완료 " +carryBulletCount );
+		}
+
+		// 레이저 추가
+		public void AddLaser(int _count)
+		{
+			max_mine_energy += _count;
+			Debug.Log("레이저 추가완료 " + max_mine_energy);
+		}
 	}	// class
 }	// namespace
 
