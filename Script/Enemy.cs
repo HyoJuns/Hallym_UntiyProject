@@ -34,7 +34,16 @@ public class Enemy : ScriptableObject {
 	public int speed;					// 이동속도
 	[Tooltip("적 공격 딜레이 (float)")]
 	public float delay;					// 공격속도
+	[Tooltip("경험치")]
+	public int exp;						// 경험치
+
+	[Tooltip("드랍아이템")]
+	public Cs_ItemPickup prefab;			// 드랍 아이템
+	public Item item;						// 아이템
 	
+	[Tooltip("확률 (0.1 ~ 1.0)")]
+	[Range(0.0f,1.0f)]
+	public float random;				// 확률 
 	
 
 	public enum enemyType{
