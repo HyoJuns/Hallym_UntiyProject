@@ -105,20 +105,20 @@ https://unity3d.com/kr/learn/tutorials/projects/survival-shooter/player-characte
 
 ### 7. 게임화면
 - <b>옵션</b>
-![Screen](./img/back_1_control.PNG)
+![Screen](./img/back_1_control.PNG)<br>
 단축키를 보는 옵션이다.
-![Screen](./img/back_1_game.PNG)
+![Screen](./img/back_1_game.PNG)<br>
 난이도를 설정할 수 있는 옵션이다.
 난이도가 높을 수록 적 애들은 강해진다.
-![Screen](./img/back_1_video.PNG)
+![Screen](./img/back_1_video.PNG)<br>
 SE, BGM 크기를 설정할 수 있으며, 게임을 나가도 저장할 수 있도록 하기위해 PlayerPrefs을 이용했다.
 
-![Screen](./img/back_0_newgame.PNG)
+![Screen](./img/back_0_newgame.PNG)<br>
 새로운 게임을 시작하는 장소이다.
 이름을 입력하면 다음에 스텟이 저장될 수 있도록 PlayerPrefs를 이용했다.
 
 - <b>게임화면</b>
-![Screen](./img/loding.PNG)
+![Screen](./img/loding.PNG)<br>
 로딩은 동작이 잘되도록 진행상태를 나타내며, 이 것은 AsyncOperation (비동기적 코루틴 수행)
 코루틴 : 서브루틴, 멀티 태스킹(공용자원)구현하는 용도 사용
 동기적 : 어떤 작업을 요청했을 때 그 작업이 종료될 때까지 기다린 후 다음(다른) 작업을 수행하는 방식.
@@ -126,11 +126,11 @@ SE, BGM 크기를 설정할 수 있으며, 게임을 나가도 저장할 수 있
 
 AsyncOperation 이것을 사용하여 로딩시스템을 구현 (인터넷 참조)
 
-![Screen](./img/GameHome.PNG)
+![Screen](./img/GameHome.PNG)<br>
 게임 화면이다.
 
 - <b>단축키</b>
-![Screen](./img/Creatmenu.PNG)
+![Screen](./img/Creatmenu.PNG)<br>
 Tab 키를 누르면 건설창을 뛰울 수 있다.
 포인트는 Enemy를 잡아서 아이템을 먹으면 획득할 수 있다.
 
@@ -140,35 +140,37 @@ Tab 키를 누르면 건설창을 뛰울 수 있다.
 
 플레이어를 감지 못할 경우에는 멈추는 상태로 납두었으며, 플레이어가 몬스터의 탐지거리안에 들어가면 추적시킨다.
 
-![Screen](./img/Inventory.PNG)
+![Screen](./img/Inventory.PNG)<br>
 인벤토리 창이다. (<b>I</b> Key)
 위에 건설창 또한 포토샵으로 만든 것이며, 디자인 센스가 구리다는 것을 알 수 있었다.
 
-![Screen](./img/Item.PNG)
+![Screen](./img/Item.PNG)<br>
 이것은 아이템박스이며, 해당 몬스터나 촉수같이 생긴(광물)을 잡거나 캐면 나온다.
-![Screen](./img/enemy.PNG)
-![Screen](./img/Mine.PNG)
+![Screen](./img/enemy.PNG)<br>
+![Screen](./img/Mine.PNG)<br>
 이 광물들은 많이 때리면 파괴할 수 있다. 아이템은 무조건 랜덤이며, 몬스터 고기가 드롭될 수 있다.
 
-![Screen](./img/Minningmode.PNG)
+![Screen](./img/Minningmode.PNG)<br>
 모드변경 : 채광모드 (<b>Q</b> Key) 촉수같이 생긴(광물)을 캘 수 있으며, 엄청난 빛이 뿜어져 나온다. 
-![Screen](./img/weaponmode.PNG)
+![Screen](./img/weaponmode.PNG)<br>
 모드변경 : 사냥모드 (<b>Q</b> Key) 총을 발사하면 샷것같은 발사 이펙트지만, 실제로는 한발 밖에 안맞는다. 시각적으로는 채광모드로 때리는게 더 아파 보인다.
 
-![Screen](./img/Playerstatus.PNG)
+![Screen](./img/Playerstatus.PNG)<br>
 빨간색 : 나의 건강상태를 나타내며, 0이 될 경우 당연히
 파란색 : 나의 목마름을 나타내며, 0이 될 경우 당연히
 초록색 : 나의 식량을 나타내며, 0이 될 경우 당연히
 노란색 : 내가 뛰면 1씩 깎이며, 안 달릴 때는 1씩 회복한다.
 갈색 : (Armor) 내 방어력이다. 
-![Screen](./img/Gameover.PNG)
+![Screen](./img/Gameover.PNG)<br>
 뜬다.
 
-![Screen](./img/status.PNG)
+![Screen](./img/status.PNG)<br>
 나의 상태를 글씨로 나타내준다.
 Day 30이 될 경우 승리하며, 일정 적을 잡다보면 레벨업을 해서 강해질 수 있도록 했다.
 
 - <b>버그</b>
 1. 아이템창에서 아이템에 커서를 가져다 놓으면 아이템 설명이 뜨는데, 그 상태로 키보드로 ESC 누르면 아이템창만 꺼진다.
 2. 가끔 딜이 안박힐 때도 있다.
-3. 게임은 만들기 어렵다.
+
+
+다음 게임을 만들때는 좀 더 면밀한 계획을 짜야 할 거 같다. 
